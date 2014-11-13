@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Support.UI;
-using Protractor;
 using FluentAssertions;
 using Protractor_Net_Demo.Pages;
 
@@ -48,8 +42,6 @@ namespace Protractor_Net_Demo
         {
             _page.Add("1", "1");
             _page.Add("1", "1");
-
-            var history = _page.History;
 
             _page.History.Should().HaveCount(2);
         }
