@@ -12,44 +12,44 @@ namespace Protractor_Net_Demo
     {
         const string URL = "http://juliemr.github.io/protractor-demo/";
 
-        IWebDriver _driver;
-        SuperCalculatorPage _page;
+        IWebDriver driver;
+        SuperCalculatorPage page;
 
         [SetUp]
         public void Setup()
         {
-            _driver = new ChromeDriver();
-            _driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(10));
-            _page = new SuperCalculatorPage(_driver, URL);
+            driver = new ChromeDriver();
+            driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(10));
+            page = new SuperCalculatorPage(driver, URL);
         }
 
         [Test]
         public void PageObject_AddOneAndTwo_ShouldBeThree()
         {
-            _page.Add("1", "2");
-            _page.LatestResult.Should().Be("3");
+            page.Add("1", "2");
+            page.LatestResult.Should().Be("3");
         }
 
         [Test]
         public void PageObject_ThreeSubtractOne_ShouldBeTwo()
         {
-            _page.Subtract("3", "1");
-            _page.LatestResult.Should().Be("2");
+            page.Subtract("3", "1");
+            page.LatestResult.Should().Be("2");
         }
 
         [Test]
         public void PageObject_PerformTwoOperations_ShouldHaveTwoItemsInHistory()
         {
-            _page.Add("1", "1");
-            _page.Add("1", "1");
+            page.Add("1", "1");
+            page.Add("1", "1");
 
-            _page.History.Should().HaveCount(2);
+            page.History.Should().HaveCount(2);
         }
 
         [TearDown]
         public void Teardown()
         {
-            _driver.Quit();
+            driver.Quit();
         }
     }
 }
