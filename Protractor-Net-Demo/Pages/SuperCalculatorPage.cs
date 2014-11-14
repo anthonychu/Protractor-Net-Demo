@@ -42,6 +42,11 @@ namespace Protractor_Net_Demo.Pages
             DoMath(first, second, "-");
         }
 
+        public void Divide(string first, string second)
+        {
+            DoMath(first, second, "/");
+        }
+
         private void DoMath(string first, string second, string op)
         {
             SetFirst(first);
