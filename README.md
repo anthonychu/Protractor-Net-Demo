@@ -4,4 +4,4 @@ Some NUnit tests using [Protractor.NET](https://github.com/bbaia/protractor-net)
 
 * **BasicTests.cs** - Basic tests
 * **PageObjectTests.cs** - Tests using page objects
-* **SimpleMath.feature and SimpleMathSteps** - Specflow/Gherkin tests
+* **SimpleMath.feature and SimpleMathSteps.cs** - Specflow/Gherkin tests

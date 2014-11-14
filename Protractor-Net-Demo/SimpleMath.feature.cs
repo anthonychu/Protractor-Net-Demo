@@ -11,7 +11,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Protractor_Net_Demo.SuperCalculatorSpecs
+namespace Protractor_Net_Demo
 {
     using TechTalk.SpecFlow;
     

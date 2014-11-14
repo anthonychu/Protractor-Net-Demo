@@ -65,17 +65,17 @@
     <Compile Include="PageObjectTests.cs" />
     <Compile Include="Pages\SuperCalculatorPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SuperCalculatorSpecs\SimpleMath.feature.cs">
+    <Compile Include="SimpleMath.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SimpleMath.feature</DependentUpon>
     </Compile>
-    <Compile Include="SuperCalculatorSpecs\SimpleMathSteps.cs" />
+    <Compile Include="SimpleMathSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="SuperCalculatorSpecs\SimpleMath.feature">
+    <None Include="SimpleMath.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SimpleMath.feature.cs</LastGenOutput>
     </None>
